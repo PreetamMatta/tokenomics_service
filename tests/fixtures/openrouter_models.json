@@ -1,0 +1,150 @@
+{
+  "data": [
+    {
+      "id": "anthropic/claude-sonnet-4.6",
+      "canonical_slug": "anthropic/claude-sonnet-4.6",
+      "name": "Anthropic: Claude Sonnet 4.6",
+      "created": 1767139200,
+      "description": "Anthropic's mid-tier frontier model with extended thinking.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": ["text", "image"],
+        "output_modalities": ["text"],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "request": "0",
+        "image": "0.0048",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000003",
+        "input_cache_write": "0.00000375"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 64000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "tools",
+        "tool_choice",
+        "max_tokens",
+        "temperature",
+        "reasoning",
+        "structured_outputs"
+      ]
+    },
+    {
+      "id": "openai/gpt-5.2-mini",
+      "canonical_slug": "openai/gpt-5.2-mini",
+      "name": "OpenAI: GPT-5.2 Mini",
+      "created": 1764460800,
+      "description": "Fast, cheap general-purpose model.",
+      "context_length": 400000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": ["text", "image"],
+        "output_modalities": ["text"],
+        "tokenizer": "GPT"
+      },
+      "pricing": {
+        "prompt": "0.00000025",
+        "completion": "0.000002",
+        "request": "0",
+        "image": "0.000217",
+        "input_cache_read": "0.000000125"
+      },
+      "top_provider": {
+        "context_length": 400000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": ["tools", "max_tokens", "temperature", "structured_outputs"]
+    },
+    {
+      "id": "deepseek/deepseek-r1",
+      "canonical_slug": "deepseek/deepseek-r1",
+      "name": "DeepSeek: R1",
+      "created": 1737331200,
+      "description": "Open reasoning model billed with explicit reasoning pricing.",
+      "context_length": 163840,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": ["text"],
+        "output_modalities": ["text"],
+        "tokenizer": "DeepSeek"
+      },
+      "pricing": {
+        "prompt": "0.00000055",
+        "completion": "0.00000219",
+        "request": "0",
+        "internal_reasoning": "0.00000219",
+        "input_cache_read": "0.00000014"
+      },
+      "top_provider": {
+        "context_length": 163840,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": ["max_tokens", "temperature", "reasoning"]
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct",
+      "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Meta: Llama 3.3 70B Instruct",
+      "created": 1733443200,
+      "description": "Deprecated open-weights workhorse.",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": ["text"],
+        "output_modalities": ["text"],
+        "tokenizer": "Llama3"
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.00000025",
+        "request": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "expiration_date": "2026-01-15",
+      "supported_parameters": ["max_tokens", "temperature"]
+    },
+    {
+      "id": "openrouter/auto",
+      "canonical_slug": "openrouter/auto",
+      "name": "Auto Router",
+      "created": 1699228800,
+      "description": "Dynamic routing meta-model with non-fixed pricing.",
+      "context_length": 2000000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": ["text"],
+        "output_modalities": ["text"],
+        "tokenizer": "Router"
+      },
+      "pricing": {
+        "prompt": "-1",
+        "completion": "-1"
+      },
+      "top_provider": {
+        "context_length": null,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": []
+    }
+  ]
+}

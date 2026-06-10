@@ -1,0 +1,18 @@
+# Runtime settings. Environment variables OPENROUTER_TTL_SECONDS,
+# AA_TTL_SECONDS, and CONFIG_DIR override these; the AA API key is read from
+# the environment variable named by artificial_analysis.api_key_env.
+
+openrouter:
+  url: https://openrouter.ai/api/v1/models
+  ttl_seconds: 86400 # 24h
+
+artificial_analysis:
+  url: https://artificialanalysis.ai/api/v2/data/llms/models
+  ttl_seconds: 86400 # 24h — free tier is 1,000 req/day; cache aggressively
+  api_key_env: AA_API_KEY
+
+files:
+  tiers: tiers.yaml
+  aliases: model_aliases.yaml
+  overrides: overrides.yaml
+  local_models_dir: local_models

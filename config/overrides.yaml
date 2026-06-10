@@ -1,0 +1,14 @@
+# Curated override layer (§6.3) — the human-curated final say. Per model_id:
+#   capabilities: tier overrides (ALWAYS win over AA-derived tiers)
+#   tags: merged into the card's tags
+#   benchmark_scores: merged (e.g. internal eval results, 0..1 normalized)
+#
+# Example:
+# anthropic/claude-sonnet-4.6:
+#   capabilities:
+#     coding: 5
+#     compliance: 4
+#   tags: [scaffle-approved]
+#   benchmark_scores:
+#     internal_scaffle_eval: 0.91
+{}

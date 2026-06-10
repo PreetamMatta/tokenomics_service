@@ -1,0 +1,93 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": "aa-001",
+      "name": "Claude Sonnet 4.6",
+      "slug": "claude-sonnet-4-6",
+      "model_creator": { "name": "Anthropic", "slug": "anthropic" },
+      "evaluations": {
+        "artificial_analysis_intelligence_index": 50.0,
+        "artificial_analysis_coding_index": 50.0,
+        "artificial_analysis_math_index": 50.0,
+        "artificial_analysis_agentic_index": 50.0,
+        "gpqa": 0.66,
+        "mmlu_pro": 0.84,
+        "hle": 0.12,
+        "livecodebench": 0.72,
+        "scicode": 0.37,
+        "aime": 0.55,
+        "ifbench": 0.58,
+        "terminalbench_hard": 0.31,
+        "swe_bench": 0.62
+      },
+      "pricing": { "price_1m_input_tokens": 3.0, "price_1m_output_tokens": 15.0 },
+      "median_output_tokens_per_second": 72.4,
+      "median_time_to_first_token_seconds": 1.91
+    },
+    {
+      "id": "aa-002",
+      "name": "GPT-5.2 Mini",
+      "slug": "gpt-5-2-mini",
+      "model_creator": { "name": "OpenAI", "slug": "openai" },
+      "evaluations": {
+        "artificial_analysis_intelligence_index": 40.0,
+        "artificial_analysis_coding_index": 40.0,
+        "artificial_analysis_math_index": 40.0,
+        "artificial_analysis_agentic_index": 40.0,
+        "gpqa": 0.55,
+        "mmlu_pro": 0.78
+      },
+      "pricing": { "price_1m_input_tokens": 0.25, "price_1m_output_tokens": 2.0 },
+      "median_output_tokens_per_second": 180.2,
+      "median_time_to_first_token_seconds": 0.62
+    },
+    {
+      "id": "aa-003",
+      "name": "DeepSeek R1",
+      "slug": "deepseek-r1",
+      "model_creator": { "name": "DeepSeek", "slug": "deepseek" },
+      "evaluations": {
+        "artificial_analysis_intelligence_index": 30.0,
+        "artificial_analysis_coding_index": 30.0,
+        "artificial_analysis_math_index": 30.0,
+        "artificial_analysis_agentic_index": 30.0,
+        "gpqa": 0.6,
+        "aime": 0.7
+      },
+      "pricing": { "price_1m_input_tokens": 0.55, "price_1m_output_tokens": 2.19 },
+      "median_output_tokens_per_second": 25.1,
+      "median_time_to_first_token_seconds": 3.4
+    },
+    {
+      "id": "aa-004",
+      "name": "Mid Model",
+      "slug": "mid-model",
+      "model_creator": { "name": "Misc", "slug": "misc" },
+      "evaluations": {
+        "artificial_analysis_intelligence_index": 20.0,
+        "artificial_analysis_coding_index": 20.0,
+        "artificial_analysis_math_index": 20.0,
+        "artificial_analysis_agentic_index": 20.0
+      },
+      "pricing": { "price_1m_input_tokens": 0.2, "price_1m_output_tokens": 0.8 },
+      "median_output_tokens_per_second": 90.0,
+      "median_time_to_first_token_seconds": 0.8
+    },
+    {
+      "id": "aa-005",
+      "name": "Small Model",
+      "slug": "small-model",
+      "model_creator": { "name": "Misc", "slug": "misc" },
+      "evaluations": {
+        "artificial_analysis_intelligence_index": 10.0,
+        "artificial_analysis_coding_index": 10.0,
+        "artificial_analysis_math_index": 10.0,
+        "artificial_analysis_agentic_index": 10.0
+      },
+      "pricing": { "price_1m_input_tokens": 0.1, "price_1m_output_tokens": 0.4 },
+      "median_output_tokens_per_second": 200.0,
+      "median_time_to_first_token_seconds": 0.3
+    }
+  ]
+}
