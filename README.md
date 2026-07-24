@@ -202,3 +202,5 @@ Layout follows the spec: `src/tokenomics/schemas/` (contract), `cost/` (pure
 engine), `providers/` (OpenRouter/local + TTL cache), `benchmarks/` (AA +
 tier derivation + overrides), `registry/` (merge + queries), `service.py`
 (facade), `app.py` (thin routes), `client.py` (typed HTTP client).
+
+<!-- Last updated: 2026-07-24 -->
