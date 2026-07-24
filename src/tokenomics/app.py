@@ -162,6 +162,15 @@ def create_app(
 
     # -- health & meta ------------------------------------------------------
 
+    @app.get("/")
+    async def root() -> dict[str, str]:
+        return {
+            "name": "tokenomics",
+            "version": __version__,
+            "docs_url": "/docs",
+            "health_url": "/health",
+        }
+
     @app.get("/health")
     async def health(service: ServiceDep) -> dict:
         return service.health()
