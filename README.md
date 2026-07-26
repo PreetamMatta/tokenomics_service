@@ -41,6 +41,7 @@ All provider data sits behind in-memory TTL caches — there is no database.
 
 | Method | Path | Description |
 | --- | --- | --- |
+| GET | `/` | root metadata + docs URL |
 | GET | `/health` | liveness + per-provider freshness |
 | GET | `/v1/capabilities` | capability enum, tier semantics, derivation thresholds |
 | GET | `/v1/schedules/presets` | `light_4x6`, `standard_7x5`, `heavy_15x7`, `always_on_24x7` |
@@ -201,3 +202,5 @@ Layout follows the spec: `src/tokenomics/schemas/` (contract), `cost/` (pure
 engine), `providers/` (OpenRouter/local + TTL cache), `benchmarks/` (AA +
 tier derivation + overrides), `registry/` (merge + queries), `service.py`
 (facade), `app.py` (thin routes), `client.py` (typed HTTP client).
+
+<!-- Last updated: 2026-07-24 -->

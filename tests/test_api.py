@@ -61,6 +61,15 @@ WORKLOAD = {
 
 
 class TestHealthAndMeta:
+    def test_root(self, client):
+        res = client.get("/")
+        assert res.status_code == 200
+        body = res.json()
+        assert body["name"] == "tokenomics"
+        assert body["version"]
+        assert body["docs_url"] == "/docs"
+        assert body["health_url"] == "/health"
+
     def test_health(self, client):
         body = client.get("/health").json()
         assert body["status"] == "ok"
